@@ -8,7 +8,7 @@ Welcome to my SOC Analyst portfolio. Here, I document my hands-on experience in 
   - *Status: Completed*
 
 ## Project 02: Windows Failed Login Detection with Wazuh
-- **Focus:** [Monitoring Windows authentication events and analyzing Event ID 4625 failed login attempts.](https://github.com/mdyousufali-socanalyst/SOC-Lab-Projects/tree/main/Project-02-Windows-Failed-Login-Detection)
+- **Focus:** [Project 02: Monitoring Windows authentication events and analyzing Event ID 4625 failed login attempts](https://github.com/mdyousufali-socanalyst/SOC-Lab-Projects/tree/main/Project-02-Windows-Failed-Login-Detection)
   - *Status: Completed*
     
 ## Project 02: Brute Force Detection Alert
