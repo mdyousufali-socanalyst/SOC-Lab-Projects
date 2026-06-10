@@ -17,4 +17,4 @@ Welcome to my SOC Analyst portfolio. Here, I document my hands-on experience in 
 - **Environment:** VirtualBox, Windows 10/11, Linux
 
 ## Contact
-- https://www.linkedin.com/in/mdyousufali-socanalyst/
+- [LinkedIn Profile] https://www.linkedin.com/in/mdyousufali-socanalyst/
