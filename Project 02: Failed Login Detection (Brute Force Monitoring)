@@ -1,0 +1,25 @@
+# Project 02: Failed Login Detection (Brute Force Monitoring)
+
+## Objective
+To monitor and alert on unauthorized login attempts (Event ID 4625) using Wazuh SIEM to detect potential brute-force activities.
+
+## Lab Environment
+- Wazuh Server
+- Windows 10 Endpoint
+- Wazuh Agent
+
+## Methodology
+1. **Windows Audit Policy**: Enabled "Audit Logon Events" (Failure) in the Windows Local Security Policy.
+2. **Log Ingestion**: Verified Windows Security logs are being forwarded to the Wazuh Manager.
+3. **Simulation**: Performed intentional failed login attempts (Event ID 4625) on the endpoint.
+4. **Detection**: Used Wazuh Discover dashboard to filter and visualize authentication failure events.
+
+## Key Findings
+- Successfully captured and visualized multiple failed login attempts.
+- Verified that the SIEM correctly identifies and logs authentication failures in real-time.
+
+## Screenshots
+[Insert your screenshots here]
+
+## Result
+Verified the integrity of the security monitoring pipeline and confirmed that the SIEM is correctly parsing and displaying authentication failure events.
