@@ -7,7 +7,7 @@ Build a basic SOC homelab using Wazuh and Sysmon to collect and monitor endpoint
 ## Lab Environment
 
 * Wazuh Server
-* Windows 11 Endpoint
+* Windows 10 Endpoint
 * Sysmon
 * VirtualBox
 
