@@ -1,35 +1,50 @@
-# Project 02 - Windows Failed Login Detection with Wazuh
+Project 02 – Windows Failed Login Detection with Wazuh
+Objective
 
-## Objective
+Monitor and detect failed Windows authentication attempts using Wazuh SIEM by analyzing Windows Security Event Logs. The goal was to identify unauthorized access attempts and establish a foundation for brute-force attack detection.
 
-Detect and monitor failed Windows login attempts using Wazuh SIEM to identify potential brute-force or unauthorized authentication activities.
+Lab Environment
+Wazuh Server
+Windows 10 Endpoint
+Wazuh Agent
+Windows Security Event Logs
+Tasks Performed
+Installed and configured Wazuh Agent on Windows 10
+Enabled Windows Audit Policy for logon failure events
+Verified Security Event Log ingestion into Wazuh
+Generated multiple failed authentication attempts
+Investigated failed login events in the Wazuh Dashboard
+Filtered and analyzed Event ID 4625 records
+Key Event Details
+Event ID: 4625
+Event Type: Failed Logon
+Log Source: Windows Security Logs
+Detection Platform: Wazuh SIEM
+Authentication Package: Negotiate
+Investigation Findings
+Failed authentication attempts were successfully captured and indexed
+Wazuh collected relevant login failure details including timestamps and source host information
+Authentication failure events were visible within the Threat Hunting module
+Log ingestion and event monitoring were validated successfully
+Security Relevance
 
-## Lab Environment
+Repeated Event ID 4625 occurrences may indicate:
 
-* Wazuh Server
-* Windows 10 Endpoint
-* Wazuh Agent
-* Windows Security Event Logs
+Brute-force attacks
+Password spraying attempts
+Unauthorized access attempts
+User credential misuse
+MITRE ATT&CK Mapping
+T1110 – Brute Force
+T1110.003 – Password Spraying
+Results
 
-## Tasks Performed
+The detection workflow successfully identified failed login attempts and demonstrated Wazuh's capability to monitor authentication-related security events in real time.
 
-1. Configured Windows Audit Policy for failed logon events
-2. Verified Windows Security Log collection through Wazuh Agent
-3. Generated multiple failed login attempts for testing
-4. Monitored authentication events in Wazuh
-5. Analyzed Event ID 4625 logs in Threat Hunting
+Screenshots
 
-## Results
+Screenshots of the Wazuh dashboard and Event ID 4625 logs are included in this repository.
 
-* Failed login attempts were successfully captured
-* Event ID 4625 was detected and logged by Wazuh
-* Authentication failure events were visible in the dashboard
-* Log collection and monitoring were functioning correctly
+Conclusion
 
-## Screenshots
-
-See attached screenshots inside this project folder.
-
-## Conclusion
-
-Successfully configured and tested Windows failed login detection using Wazuh SIEM. The lab demonstrated the ability to monitor authentication failures and detect suspicious login activity, providing a foundation for brute-force attack detection and security monitoring.
+This project demonstrated the implementation of Windows authentication monitoring with Wazuh SIEM. The lab provided hands-on experience in log collection, event analysis, and detection of suspicious login activity relevant to SOC Analyst operations.
